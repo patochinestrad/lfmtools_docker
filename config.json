@@ -1,0 +1,5 @@
+{
+    "fpocket" : "/home/patricio/anaconda3/envs/molpharm/bin/fpocket",
+    "vina" : "/home/patricio/anaconda3/envs/molpharm/bin/vina",
+    "mtmAlign" : "/home/patricio/Documents/mTM-align/src/mTM-align"
+}
