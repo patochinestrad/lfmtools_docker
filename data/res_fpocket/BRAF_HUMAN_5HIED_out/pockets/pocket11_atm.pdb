@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : -0.1696
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.7766
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5970
+HEADER 5  - Mean B-factor of pocket residues  : 0.7379
+HEADER 6  - Hydrophobicity Score              : 30.8333
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.1667
+HEADER 9  - Pocket volume (Monte Carlo)       : 184.2187
+HEADER 10  -Pocket volume (convex hull)       : 5.4892
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 6.0000
+HEADER 13 - Number of apolar alpha sphere     :     7
+HEADER 14 - Proportion of apolar alpha sphere : 0.4118
+ATOM   1961   CB SER D 713     -74.811  10.939 111.647  0.00  0.00           C 0
+ATOM   1754    O ALA D 688     -70.156  10.423 107.715  0.60  2.14           O 0
+ATOM   1755   CB ALA D 688     -68.465   9.334 110.191  0.00  0.00           C 0
+ATOM   1962   OG SER D 713     -75.572   9.748 111.531  0.00  0.00           O 0
+ATOM   1813  OE2 GLU D 695     -75.341   6.889 106.260  0.67  9.64           O 1
+ATOM   1788   CB LEU D 692     -73.152  11.776 106.896  0.00  0.00           C 0
+ATOM   1790  CD1 LEU D 692     -75.520  11.858 107.755  0.00  0.00           C 0
+ATOM   1777   CB ARG D 691     -69.984   7.642 105.587  0.00  0.00           C 0
+ATOM   1779   CD ARG D 691     -69.628   5.181 106.157  0.00  0.00           C 0
+ATOM   1752   CA ALA D 688     -68.254   9.359 108.690  0.00  0.00           C 0
+ATOM   1987  CD2 LEU D 716     -71.299   8.261 116.116  0.00  0.00           C 0
+ATOM   1958   CA SER D 713     -74.562  11.294 113.109  0.00  0.00           C 0
+ATOM   1960    O SER D 713     -72.362  12.124 113.478  0.85  5.36           O 0
+ATOM   1784    N LEU D 692     -71.937  10.189 105.460  0.00  0.00           N 0
+ATOM   1785   CA LEU D 692     -73.228  10.838 105.680  0.00  0.00           C 0
+TER
+END

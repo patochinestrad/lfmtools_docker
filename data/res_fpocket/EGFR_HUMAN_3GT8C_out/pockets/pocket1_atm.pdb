@@ -1,0 +1,53 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     1:
+HEADER 0  - Pocket Score                      : 0.0299
+HEADER 1  - Drug Score                        : 0.0163
+HEADER 2  - Number of alpha spheres           :    42
+HEADER 3  - Mean alpha-sphere radius          : 3.8663
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5244
+HEADER 5  - Mean B-factor of pocket residues  : 0.7330
+HEADER 6  - Hydrophobicity Score              : -1.0833
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.4167
+HEADER 9  - Pocket volume (Monte Carlo)       : 485.7556
+HEADER 10  -Pocket volume (convex hull)       : 72.1759
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.4048
+ATOM   2053  OE2 GLU C 967     -35.794  16.226 -92.386  0.00  0.00           O 1
+ATOM   1869  CG1 ILE C 946     -37.377  11.508 -93.132  0.00  0.00           C 0
+ATOM   1899   NZ LYS C 949     -38.399  14.562 -99.228  0.75  5.47           N 1
+ATOM   1897   CD LYS C 949     -35.979  13.920 -99.176  0.00  0.00           C 0
+ATOM   1860   CB MET C 945     -41.044  11.736 -96.488  0.00  0.00           C 0
+ATOM   1863   CE MET C 945     -43.294  13.915 -95.525  0.00  0.00           C 0
+ATOM   1862   SD MET C 945     -42.751  13.775 -97.228  0.00  0.00           S 0
+ATOM   2020  OE2 GLU C 963     -28.730  19.426 -95.158  0.57  8.57           O 1
+ATOM   1952    O ASP C 956     -28.234  16.217-103.025  0.00  0.00           O 0
+ATOM   1989   NZ LYS C 960     -23.961  18.111 -98.530  0.68  9.84           N 1
+ATOM   1986   CG LYS C 960     -25.673  16.570 -96.653  0.00  0.00           C 0
+ATOM   1870  CG2 ILE C 946     -35.064  10.725 -93.663  0.00  0.00           C 0
+ATOM   1979   CG PRO C 959     -31.995  12.627 -96.667  0.00  0.00           C 0
+ATOM   1832    O ASP C 942     -40.638  11.513 -92.881  0.61  3.21           O 0
+ATOM   1836  OD2 ASP C 942     -43.985  14.493 -91.610  0.00  0.00           O 1
+ATOM   1988   CE LYS C 960     -24.372  16.706 -98.802  0.00  0.00           C 0
+ATOM   2019  OE1 GLU C 963     -29.667  17.451 -95.376  0.00  0.00           O 0
+ATOM   1975   CA PRO C 959     -29.932  13.815 -96.987  0.00  0.00           C 0
+ATOM   1978   CB PRO C 959     -30.861  13.233 -95.912  0.00  0.00           C 0
+ATOM   2050   CG GLU C 967     -34.246  15.262 -90.853  0.00  0.00           C 0
+ATOM   2028  CD2 LEU C 964     -31.659  11.394 -92.882  0.00  0.00           C 0
+ATOM   1864    N ILE C 946     -38.328  10.290 -95.539  0.00  0.00           N 0
+ATOM   1865   CA ILE C 946     -36.891  10.389 -95.328  0.00  0.00           C 0
+ATOM   1859    O MET C 945     -38.218  10.806 -97.726  0.00  0.00           O 0
+ATOM   1858    C MET C 945     -38.876  10.516 -96.729  0.00  0.00           C 0
+ATOM   1966    O ARG C 958     -28.811  14.103 -99.528  0.48  4.29           O 0
+ATOM   2016   CB GLU C 963     -29.583  16.904 -92.666  0.00  0.00           C 0
+ATOM   1960    O SER C 957     -31.618  14.577-101.490  0.00  0.00           O 0
+ATOM   1974    N PRO C 959     -30.297  13.057 -98.188  0.00  0.00           N 0
+ATOM   1896   CG LYS C 949     -34.987  12.840 -99.569  0.00  0.00           C 0
+ATOM   2052  OE1 GLU C 967     -36.595  15.471 -90.483  0.25  7.50           O 0
+TER
+END

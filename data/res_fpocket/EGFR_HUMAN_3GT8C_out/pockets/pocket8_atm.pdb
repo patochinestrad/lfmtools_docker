@@ -1,0 +1,43 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     8:
+HEADER 0  - Pocket Score                      : -0.0783
+HEADER 1  - Drug Score                        : 0.0149
+HEADER 2  - Number of alpha spheres           :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.1119
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4683
+HEADER 5  - Mean B-factor of pocket residues  : 0.8143
+HEADER 6  - Hydrophobicity Score              : 31.4545
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.0909
+HEADER 9  - Pocket volume (Monte Carlo)       : 308.2079
+HEADER 10  -Pocket volume (convex hull)       : 14.9507
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 16.0000
+HEADER 13 - Number of apolar alpha sphere     :    17
+HEADER 14 - Proportion of apolar alpha sphere : 0.6296
+ATOM    656    O THR C 783       0.008 -14.114 -92.514  0.64  6.43           O 0
+ATOM    452  OD1 ASN C 756       1.650  -9.128 -93.771  0.52  7.50           O 0
+ATOM    434    O LYS C 754      -1.333  -8.168 -98.845  0.58  5.36           O 0
+ATOM    678  CG1 VAL C 786      -4.459 -10.420 -93.106  0.00  0.00           C 0
+ATOM    663    O SER C 784      -2.689 -16.089 -94.325  0.28  5.36           O 0
+ATOM    400    O GLU C 749      -8.111 -11.730 -99.999  0.51  2.14           O 0
+ATOM    431    N LYS C 754      -3.454  -7.820-100.395  0.66  3.28           N 0
+ATOM   1298  CD1 LEU C 862     -10.363  -9.618 -97.740  0.00  0.00           C 0
+ATOM    398   CA GLU C 749      -7.787 -13.368 -98.219  0.00  0.00           C 0
+ATOM    428   CB PRO C 753      -3.412 -11.028-100.780  0.00  0.00           C 0
+ATOM    404  OE1 GLU C 749      -5.969 -14.477 -95.804  0.00  0.00           O 0
+ATOM   1299  CD2 LEU C 862     -11.128  -7.603 -96.410  0.00  0.00           C 0
+ATOM   1288   CB LEU C 861      -8.985  -4.797 -96.159  0.00  0.00           C 0
+ATOM    384  CD1 LEU C 747      -9.060  -8.645 -92.777  0.00  0.00           C 0
+ATOM    382   CB LEU C 747      -9.749 -10.891 -93.054  0.00  0.00           C 0
+ATOM    478  CD1 ILE C 759      -2.352  -7.285 -95.397  0.00  0.00           C 0
+ATOM   1291  CD2 LEU C 861      -6.567  -4.574 -95.612  0.00  0.00           C 0
+ATOM    477  CG2 ILE C 759      -3.783  -5.455 -93.340  0.00  0.00           C 0
+ATOM    679  CG2 VAL C 786      -6.365  -9.519 -91.771  0.00  0.00           C 0
+ATOM   1287    O LEU C 861      -8.193  -5.521 -99.350  0.71  7.50           O 0
+ATOM    435   CB LYS C 754      -3.456  -5.834 -99.083  0.00  0.00           C 0
+TER
+END

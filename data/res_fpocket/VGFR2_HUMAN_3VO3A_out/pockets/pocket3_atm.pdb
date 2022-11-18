@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 0.0743
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.9325
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4920
+HEADER 5  - Mean B-factor of pocket residues  : 0.7044
+HEADER 6  - Hydrophobicity Score              : 30.0909
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Amino Acid based volume Score     : 4.8182
+HEADER 9  - Pocket volume (Monte Carlo)       : 246.7960
+HEADER 10  -Pocket volume (convex hull)       : 6.7352
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   1411  OD1 ASN A1040      16.975 -11.414 -20.304  0.00  0.00           O 0
+ATOM   1058   CA ASP A 998       9.317 -10.087 -17.515  0.00  0.00           C 0
+ATOM   1117  NE2 HIS A1004      14.015 -11.202 -22.470  0.00  0.00           N 0
+ATOM   1060    O ASP A 998       9.326 -12.294 -18.451  0.00  0.00           O 0
+ATOM   1059    C ASP A 998       8.965 -11.123 -18.582  0.00  0.00           C 0
+ATOM   1068    O PHE A 999       9.989 -11.158 -21.814  0.54  3.21           O 0
+ATOM   1051    O LYS A 997      10.227  -7.738 -18.664  0.32  6.43           O 0
+ATOM   1410  ND2 ASN A1040      16.518 -13.624 -20.333  0.62  3.28           N 0
+ATOM    911   OH TYR A 927      12.503 -16.085 -17.609  0.46  5.36           O 0
+ATOM   1083  CD2 LEU A1000      12.157 -15.420 -21.632  0.00  0.00           C 0
+ATOM    865  CE2 PHE A 921      16.871 -15.558 -13.501  0.00  0.00           C 0
+ATOM    866   CZ PHE A 921      15.677 -15.238 -12.853  0.00  0.00           C 0
+ATOM   1373  CD2 LEU A1036      16.199 -18.074 -17.867  0.00  0.00           C 0
+ATOM   1380    OASER A1037      19.828 -15.871 -16.075  0.00  0.00           O 0
+ATOM   1395    N LYS A1039      20.421 -12.000 -16.094  0.62  4.37           N 0
+ATOM   1404    N ASN A1040      19.711 -12.898 -18.598  0.56  2.19           N 0
+TER
+END

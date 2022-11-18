@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : 0.0808
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 3.5229
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4205
+HEADER 5  - Mean B-factor of pocket residues  : 0.1454
+HEADER 6  - Hydrophobicity Score              : 16.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 3.6250
+HEADER 9  - Pocket volume (Monte Carlo)       : 65.9596
+HEADER 10  -Pocket volume (convex hull)       : 0.3290
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.2105
+ATOM   1206   CA ARG A1203     -13.784   9.608 -11.045  0.00  0.00           C 0
+ATOM   1656    O SER A1264     -14.563  14.189 -15.723  0.55  1.07           O 0
+ATOM   1693   OG SER A1268     -11.755  12.453 -15.447  0.51  1.07           O 0
+ATOM   1665  OD1 ASP A1265     -15.920  10.117 -14.092  0.40  1.07           O 0
+ATOM   1658   OG SER A1264     -16.907  14.851 -12.535  0.85  2.14           O 0
+ATOM   1542   CA MET A1250      -9.824  15.736 -12.979  0.00  0.00           C 0
+ATOM   1549    N ALA A1251     -11.623  17.198 -13.696  0.00  0.00           N 0
+ATOM   1626  CD2 PHE A1260     -14.658  13.531  -9.211  0.00  0.00           C 0
+ATOM   1576   OG SER A1254     -14.754  17.050 -10.675  0.00  0.00           O 0
+ATOM   1628  CE2 PHE A1260     -13.378  13.757  -8.691  0.00  0.00           C 0
+ATOM   1657   CB SER A1264     -16.180  15.702 -13.405  0.00  0.00           C 0
+ATOM   1208    O ARG A1203     -11.487  10.198 -11.006  0.30  1.07           O 0
+ATOM   1546   CG MET A1250      -9.823  14.867 -10.550  0.00  0.00           C 0
+TER
+END

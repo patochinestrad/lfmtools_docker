@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     4:
+HEADER 0  - Pocket Score                      : 0.0477
+HEADER 1  - Drug Score                        : 0.0020
+HEADER 2  - Number of alpha spheres           :    23
+HEADER 3  - Mean alpha-sphere radius          : 3.7675
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4866
+HEADER 5  - Mean B-factor of pocket residues  : 0.4045
+HEADER 6  - Hydrophobicity Score              : 3.1429
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.2857
+HEADER 9  - Pocket volume (Monte Carlo)       : 268.5981
+HEADER 10  -Pocket volume (convex hull)       : 13.0640
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 6.0000
+HEADER 13 - Number of apolar alpha sphere     :     7
+HEADER 14 - Proportion of apolar alpha sphere : 0.3043
+ATOM    116   CA SER A 825      47.441 -25.374  -5.901  0.00  0.00           C 0
+ATOM    112    C ALA A 824      45.816 -27.153  -6.157  0.00  0.00           C 0
+ATOM    115    N SER A 825      47.044 -26.691  -6.404  0.00  0.00           N 0
+ATOM    114   CB ALA A 824      45.856 -29.634  -5.703  0.00  0.00           C 0
+ATOM    148   CB GLU A 828      42.741 -27.709  -3.763  0.00  0.00           C 0
+ATOM    149   CG GLU A 828      42.292 -28.616  -2.642  0.00  0.00           C 0
+ATOM    759   CE LYS A 907      44.336 -30.254   0.725  0.00  0.00           C 0
+ATOM    760   NZ LYS A 907      44.566 -29.154   1.696  0.52  4.37           N 1
+ATOM    147    O GLU A 828      41.578 -24.867  -3.309  0.30  7.50           O 0
+ATOM    169   CG PRO A 830      40.213 -24.238   1.757  0.00  0.00           C 0
+ATOM    113    O ALA A 824      44.966 -26.498  -5.542  0.72  3.21           O 0
+ATOM    152  OE2 GLU A 828      40.892 -30.494  -2.320  0.00  0.00           O 1
+ATOM    176   CG ARG A 831      35.878 -30.563   1.620  0.00  0.00           C 0
+ATOM    171    N ARG A 831      37.124 -27.753   2.199  0.53  5.47           N 0
+ATOM    156    O PHE A 829      38.280 -27.222  -0.965  0.68  1.07           O 0
+ATOM    756   CB LYS A 907      41.713 -33.063   0.507  0.00  0.00           C 0
+ATOM    758   CD LYS A 907      43.246 -31.205   1.201  0.00  0.00           C 0
+ATOM    165   CA PRO A 830      38.860 -26.194   1.489  0.00  0.00           C 0
+ATOM    180  NH1 ARG A 831      37.591 -33.129   1.557  0.65  6.56           N 1
+ATOM    164    N PRO A 830      39.049 -25.488   0.219  0.69  1.09           N 0
+TER
+END

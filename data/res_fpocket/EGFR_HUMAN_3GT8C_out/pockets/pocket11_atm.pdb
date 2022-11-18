@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : -0.0955
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.9431
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6283
+HEADER 5  - Mean B-factor of pocket residues  : 0.4821
+HEADER 6  - Hydrophobicity Score              : -4.3333
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 3.6667
+HEADER 9  - Pocket volume (Monte Carlo)       : 253.9828
+HEADER 10  -Pocket volume (convex hull)       : 11.3029
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.2667
+ATOM   1444  OG1 THR C 892     -20.986   9.320-102.249  0.59  4.29           O 0
+ATOM   1955  OD1 ASP C 956     -24.112  15.614-103.332  0.70  3.21           O 0
+ATOM   1443  CG2 THR C 892     -19.082   9.006-103.703  0.00  0.00           C 0
+ATOM   1956  OD2 ASP C 956     -23.684  16.154-105.418  0.00  0.00           O 1
+ATOM   1442   CB THR C 892     -19.555   9.242-102.272  0.00  0.00           C 0
+ATOM   1460   CG GLN C 894     -23.875  12.068-100.899  0.00  0.00           C 0
+ATOM   1462  NE2 GLN C 894     -23.884  12.894 -98.623  0.68  7.66           N 0
+ATOM   1451  CD2 HIS C 893     -17.817  11.820 -97.668  0.00  0.00           C 0
+ATOM   1449   CB HIS C 893     -20.162  10.731 -97.420  0.00  0.00           C 0
+ATOM   1445    N HIS C 893     -19.778   9.245 -99.328  0.61  1.09           N 0
+ATOM   1455    N GLN C 894     -22.380   9.679 -99.662  0.00  0.00           N 0
+ATOM   1988   CE LYS C 960     -24.372  16.706 -98.802  0.00  0.00           C 0
+ATOM   1948   CB ALA C 955     -25.440  10.653-105.238  0.00  0.00           C 0
+ATOM   1459   CB GLN C 894     -23.982  10.610-101.273  0.00  0.00           C 0
+ATOM   1954   CG ASP C 956     -24.477  15.853-104.502  0.00  0.00           C 0
+TER
+END

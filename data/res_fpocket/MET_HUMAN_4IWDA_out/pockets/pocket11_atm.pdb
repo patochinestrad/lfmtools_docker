@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    11:
+HEADER 0  - Pocket Score                      : -0.0511
+HEADER 1  - Drug Score                        : 0.0006
+HEADER 2  - Number of alpha spheres           :    26
+HEADER 3  - Mean alpha-sphere radius          : 4.0069
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4637
+HEADER 5  - Mean B-factor of pocket residues  : 0.4608
+HEADER 6  - Hydrophobicity Score              : 30.1250
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.7500
+HEADER 9  - Pocket volume (Monte Carlo)       : 291.8689
+HEADER 10  -Pocket volume (convex hull)       : 12.8036
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 11.0000
+HEADER 13 - Number of apolar alpha sphere     :    12
+HEADER 14 - Proportion of apolar alpha sphere : 0.4615
+ATOM   1187   CZ PHE A1200     -23.809   1.019  -9.882  0.00  0.00           C 0
+ATOM   1409  OD2 ASP A1228     -25.841   2.782  -6.527  0.00  0.00           O 1
+ATOM    629   CA ILE A1130     -19.870  -1.614  -7.591  0.00  0.00           C 0
+ATOM    633  CG1 ILE A1130     -19.901   0.874  -8.201  0.00  0.00           C 0
+ATOM    652   NZ LYS A1132     -26.361  -5.397  -6.865  0.61  7.66           N 1
+ATOM    660  OD2 ASP A1133     -26.467  -4.938  -9.517  0.00  0.00           O 1
+ATOM    623    O ILE A1129     -21.071  -3.969  -6.920  0.48  3.21           O 0
+ATOM    635  CD1 ILE A1130     -20.005   2.102  -7.434  0.00  0.00           C 0
+ATOM    605  CG2 THR A1126     -18.023   0.655  -2.849  0.00  0.00           C 0
+ATOM    632   CB ILE A1130     -19.100  -0.265  -7.516  0.00  0.00           C 0
+ATOM    628    N ILE A1130     -19.320  -2.578  -6.635  0.54  1.09           N 0
+ATOM    651   CE LYS A1132     -25.083  -5.341  -6.093  0.00  0.00           C 0
+ATOM    631    O ILE A1130     -20.805  -1.789  -9.813  0.44  2.14           O 0
+ATOM    657   CB ASP A1133     -25.648  -5.082 -11.751  0.00  0.00           C 0
+ATOM   1186  CE2 PHE A1200     -22.896   0.756 -10.866  0.00  0.00           C 0
+ATOM    649   CG LYS A1132     -23.508  -6.045  -7.953  0.00  0.00           C 0
+ATOM    626  CG2 ILE A1129     -21.253  -3.958  -3.791  0.00  0.00           C 0
+ATOM   1429   OH TYR A1230     -24.754   4.346  -2.139  0.00  0.00           O 0
+ATOM   1406   CB ASP A1228     -23.940   4.205  -6.320  0.00  0.00           C 0
+TER
+END

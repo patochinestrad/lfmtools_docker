@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     7:
+HEADER 0  - Pocket Score                      : -0.1106
+HEADER 1  - Drug Score                        : 0.0017
+HEADER 2  - Number of alpha spheres           :    19
+HEADER 3  - Mean alpha-sphere radius          : 4.0302
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5240
+HEADER 5  - Mean B-factor of pocket residues  : 0.3433
+HEADER 6  - Hydrophobicity Score              : 24.1667
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 3.8333
+HEADER 9  - Pocket volume (Monte Carlo)       : 175.7688
+HEADER 10  -Pocket volume (convex hull)       : 1.5644
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 14.0000
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 0.7895
+ATOM    927   CA ALA D 569     -90.729  18.035 113.265  0.00  0.00           C 0
+ATOM    894  OD1 ASP D 565     -85.218  16.190 113.605  0.18  5.36           O 0
+ATOM    930   CB ALA D 569     -89.949  18.220 114.544  0.00  0.00           C 0
+ATOM   1925   CG PRO D 708     -85.499  12.859 113.029  0.00  0.00           C 0
+ATOM    926    N ALA D 569     -89.919  18.456 112.115  0.50  1.09           N 0
+ATOM    919    O HIS D 568     -91.331  17.682 110.521  0.00  0.00           O 0
+ATOM    920   CB HIS D 568     -88.269  17.789 109.321  0.00  0.00           C 0
+ATOM   1926   CD PRO D 708     -84.883  13.206 111.725  0.00  0.00           C 0
+ATOM   1335  CE2 PHE D 635     -91.809  14.925 106.976  0.00  0.00           C 0
+ATOM   1907  CD1 LEU D 706     -87.530  10.275 107.892  0.00  0.00           C 0
+ATOM   1905   CB LEU D 706     -85.416  11.535 108.298  0.00  0.00           C 0
+ATOM    918    C HIS D 568     -90.278  18.229 110.834  0.00  0.00           C 0
+ATOM    923  ND1 HIS D 568     -86.916  17.158 107.298  0.00  0.00           N 0
+ATOM   1908  CD2 LEU D 706     -86.819  12.008 106.251  0.00  0.00           C 0
+ATOM   1333  CD2 PHE D 635     -90.687  14.531 106.246  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : -0.1007
+HEADER 1  - Drug Score                        : 0.0024
+HEADER 2  - Number of alpha spheres           :    18
+HEADER 3  - Mean alpha-sphere radius          : 3.8938
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6691
+HEADER 5  - Mean B-factor of pocket residues  : 0.7736
+HEADER 6  - Hydrophobicity Score              : 3.5000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.7500
+HEADER 9  - Pocket volume (Monte Carlo)       : 290.6441
+HEADER 10  -Pocket volume (convex hull)       : 12.9549
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 13.0000
+HEADER 13 - Number of apolar alpha sphere     :    14
+HEADER 14 - Proportion of apolar alpha sphere : 0.7778
+ATOM   2078   CE LYS C 970     -37.930  19.706 -84.958  0.00  0.00           C 0
+ATOM   2079   NZ LYS C 970     -38.264  21.058 -85.481  0.00  0.00           N 1
+ATOM   2043  CG2 ILE C 966     -32.128  18.817 -86.778  0.00  0.00           C 0
+ATOM   2077   CD LYS C 970     -38.373  18.590 -85.901  0.00  0.00           C 0
+ATOM   2016   CB GLU C 963     -29.583  16.904 -92.666  0.00  0.00           C 0
+ATOM   2018   CD GLU C 963     -29.054  18.307 -94.704  0.00  0.00           C 0
+ATOM   2019  OE1 GLU C 963     -29.667  17.451 -95.376  0.00  0.00           O 0
+ATOM   2053  OE2 GLU C 967     -35.794  16.226 -92.386  0.00  0.00           O 1
+ATOM   2013   CA GLU C 963     -29.232  16.554 -91.218  0.00  0.00           C 0
+ATOM   2017   CG GLU C 963     -28.685  17.974 -93.272  0.00  0.00           C 0
+ATOM   2044  CD1 ILE C 966     -29.277  19.521 -87.729  0.00  0.00           C 0
+ATOM   2052  OE1 GLU C 967     -36.595  15.471 -90.483  0.25  7.50           O 0
+ATOM   2046   CA GLU C 967     -34.295  14.860 -88.315  0.00  0.00           C 0
+ATOM   2051   CD GLU C 967     -35.645  15.684 -91.268  0.00  0.00           C 0
+ATOM   2050   CG GLU C 967     -34.246  15.262 -90.853  0.00  0.00           C 0
+ATOM   2040    O ILE C 966     -33.641  16.164 -85.932  0.00  0.00           O 0
+ATOM   2015    O GLU C 963     -31.179  15.719 -90.091  0.69  1.07           O 0
+ATOM   2041   CB ILE C 966     -31.092  17.798 -87.222  0.00  0.00           C 0
+ATOM   2075   CB LYS C 970     -36.773  16.904 -84.948  0.00  0.00           C 0
+ATOM   2045    N GLU C 967     -32.981  15.376 -87.940  0.00  0.00           N 0
+TER
+END

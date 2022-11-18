@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : -0.1848
+HEADER 1  - Drug Score                        : 0.0012
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.9194
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4056
+HEADER 5  - Mean B-factor of pocket residues  : 0.4663
+HEADER 6  - Hydrophobicity Score              : 68.6667
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 4.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 215.4390
+HEADER 10  -Pocket volume (convex hull)       : 4.8053
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 12.0000
+HEADER 13 - Number of apolar alpha sphere     :    13
+HEADER 14 - Proportion of apolar alpha sphere : 0.8125
+ATOM    153  OE1 GLN A1067     -23.213 -15.498   1.705  0.00  0.00           O 0
+ATOM    146   CA GLN A1067     -22.732 -12.677  -0.175  0.00  0.00           C 0
+ATOM     64  CD1 LEU A1055     -18.717 -11.608   6.400  0.00  0.00           C 0
+ATOM    177  CG2 VAL A1070     -18.976 -15.850  -0.598  0.00  0.00           C 0
+ATOM    143  CG1 VAL A1066     -18.560 -10.139  -0.040  0.00  0.00           C 0
+ATOM    120    O VAL A1063     -22.769  -9.528   1.940  0.00  0.00           O 0
+ATOM    122  CG1 VAL A1063     -21.999  -9.303   5.067  0.00  0.00           C 0
+ATOM    145    N GLN A1067     -22.185 -11.311  -0.267  0.00  0.00           N 0
+ATOM    149   CB GLN A1067     -23.762 -12.737   0.976  0.00  0.00           C 0
+ATOM     65  CD2 LEU A1055     -17.528  -9.488   6.005  0.00  0.00           C 0
+ATOM    765  CD2 LEU A1147     -14.651 -11.219   4.208  0.00  0.00           C 0
+ATOM    761    O LEU A1147     -14.818 -15.775   3.261  0.35  8.57           O 0
+ATOM    762   CB LEU A1147     -14.291 -12.947   2.409  0.00  0.00           C 0
+TER
+END

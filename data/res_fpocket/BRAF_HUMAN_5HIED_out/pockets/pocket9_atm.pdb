@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : -0.1671
+HEADER 1  - Drug Score                        : 0.0003
+HEADER 2  - Number of alpha spheres           :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.9239
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4665
+HEADER 5  - Mean B-factor of pocket residues  : 0.2166
+HEADER 6  - Hydrophobicity Score              : 13.3750
+HEADER 7  - Polarity Score                    :     7
+HEADER 8  - Amino Acid based volume Score     : 4.3750
+HEADER 9  - Pocket volume (Monte Carlo)       : 285.1857
+HEADER 10  -Pocket volume (convex hull)       : 9.8177
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.1379
+ATOM   1666    N ASP D 677     -68.693  15.074  92.766  0.61  3.28           N 0
+ATOM   1656    O SER D 675     -71.250  14.062  90.614  0.37  7.50           O 0
+ATOM   1495   CA TYR D 656     -70.334  20.279  88.639  0.00  0.00           C 0
+ATOM   1670   CB ASP D 677     -66.390  15.075  91.907  0.00  0.00           C 0
+ATOM   1494    N TYR D 656     -70.313  20.242  90.106  0.35  5.47           N 0
+ATOM   1500  CD1 TYR D 656     -72.468  18.038  89.456  0.00  0.00           C 0
+ATOM   1694   CD LYS D 680     -64.173  18.263  92.860  0.00  0.00           C 0
+ATOM   1433   OH TYR D 647     -67.415  18.370  94.141  0.31  1.07           O 0
+ATOM   1696   NZ LYS D 680     -64.798  20.562  92.203  0.43  5.47           N 1
+ATOM   1511   OG SER D 657     -65.837  22.258  89.536  0.72  9.64           O 0
+ATOM   1519  OD1 ASN D 658     -67.457  18.992  86.203  0.58  8.57           O 0
+ATOM   1506    N SER D 657     -68.552  21.947  88.681  0.52  1.09           N 0
+ATOM   1651  CD1 LEU D 674     -72.089  15.624  86.650  0.00  0.00           C 0
+ATOM   1518  ND2 ASN D 658     -65.984  17.745  85.081  0.00  0.00           N 0
+ATOM   1673  OD2 ASP D 677     -64.176  14.961  91.043  0.00  0.00           O 1
+ATOM   1695   CE LYS D 680     -63.766  19.707  92.866  0.00  0.00           C 0
+ATOM   1516   CB ASN D 658     -65.592  20.117  85.160  0.00  0.00           C 0
+ATOM   1517   CG ASN D 658     -66.437  18.913  85.508  0.00  0.00           C 0
+TER
+END

@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    16:
+HEADER 0  - Pocket Score                      : -0.0675
+HEADER 1  - Drug Score                        : 0.0019
+HEADER 2  - Number of alpha spheres           :    29
+HEADER 3  - Mean alpha-sphere radius          : 3.8850
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5516
+HEADER 5  - Mean B-factor of pocket residues  : 0.4121
+HEADER 6  - Hydrophobicity Score              : 19.0000
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.8000
+HEADER 9  - Pocket volume (Monte Carlo)       : 213.8090
+HEADER 10  -Pocket volume (convex hull)       : 9.9338
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 19.0000
+HEADER 13 - Number of apolar alpha sphere     :    20
+HEADER 14 - Proportion of apolar alpha sphere : 0.6897
+ATOM   1116  CE1 HIS A1004      13.152 -10.830 -23.398  0.00  0.00           C 0
+ATOM   1104   CG GLU A1003      16.135  -9.697 -28.620  0.00  0.00           C 0
+ATOM   1117  NE2 HIS A1004      14.015 -11.202 -22.470  0.00  0.00           N 0
+ATOM   1115  ND1 HIS A1004      13.134 -11.753 -24.342  0.00  0.00           N 0
+ATOM   1113   CG HIS A1004      14.017 -12.759 -24.014  0.00  0.00           C 0
+ATOM   1114  CD2 HIS A1004      14.564 -12.408 -22.827  0.00  0.00           C 0
+ATOM   1106  OE1 GLU A1003      15.135  -7.711 -27.720  0.71  5.36           O 0
+ATOM   1105   CD GLU A1003      16.186  -8.262 -28.133  0.00  0.00           C 0
+ATOM   1107  OE2 GLU A1003      17.297  -7.690 -28.168  0.00  0.00           O 1
+ATOM   1411  OD1 ASN A1040      16.975 -11.414 -20.304  0.00  0.00           O 0
+ATOM   1108    N HIS A1004      14.646 -12.884 -27.036  0.00  0.00           N 0
+ATOM   1109   CA HIS A1004      15.202 -13.775 -26.013  0.00  0.00           C 0
+ATOM   2440  CD2 LEU A1164      21.340 -12.006 -30.347  0.00  0.00           C 0
+ATOM   1139   SG CYS A1007      20.715 -13.235 -26.223  0.00  0.00           S 0
+ATOM   2439  CD1 LEU A1164      18.893 -11.624 -30.667  0.00  0.00           C 0
+ATOM   1408   CB ASN A1040      18.756 -12.880 -20.871  0.00  0.00           C 0
+ATOM   2438   CG LEU A1164      20.275 -11.448 -31.279  0.00  0.00           C 0
+ATOM   1138   CB CYS A1007      19.253 -13.678 -27.101  0.00  0.00           C 0
+ATOM   1102    O GLU A1003      16.477 -13.025 -28.318  0.00  0.00           O 0
+TER
+END

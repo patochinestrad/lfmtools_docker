@@ -1,0 +1,5 @@
+                    BRAF_HUMAN_5HIED.pdbEGFR_HUMAN_3GT8C.pdbMET_HUMAN_4IWDA.pdb VGFR2_HUMAN_3VO3A.pdb
+BRAF_HUMAN_5HIED.pdb0.000               2.662               2.407               2.570               
+EGFR_HUMAN_3GT8C.pdb2.662               0.000               3.210               3.302               
+MET_HUMAN_4IWDA.pdb 2.407               3.210               0.000               2.285               
+VGFR2_HUMAN_3VO3A.pdb2.570               3.302               2.285               0.000               

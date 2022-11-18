@@ -1,0 +1,62 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     5:
+HEADER 0  - Pocket Score                      : -0.0346
+HEADER 1  - Drug Score                        : 0.0024
+HEADER 2  - Number of alpha spheres           :    60
+HEADER 3  - Mean alpha-sphere radius          : 3.9707
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5041
+HEADER 5  - Mean B-factor of pocket residues  : 0.4414
+HEADER 6  - Hydrophobicity Score              : 13.4667
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.0667
+HEADER 9  - Pocket volume (Monte Carlo)       : 694.5242
+HEADER 10  -Pocket volume (convex hull)       : 171.1080
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 6.9333
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 0.2500
+ATOM    626  CD2 LEU C 778     -10.023  -1.275 -79.274  0.00  0.00           C 0
+ATOM    604   CB ARG C 776     -11.844   2.096 -82.418  0.00  0.00           C 0
+ATOM    603    O ARG C 776     -11.768  -1.085 -82.312  0.00  0.00           O 0
+ATOM    600    N ARG C 776     -13.836   0.744 -82.860  0.51  1.09           N 0
+ATOM    559   CG ASP C 770     -12.140   9.296 -79.932  0.00  0.00           C 0
+ATOM    558   CB ASP C 770     -11.637   8.697 -81.224  0.00  0.00           C 0
+ATOM    561  OD2 ASP C 770     -11.800  10.462 -79.648  0.48  8.57           O 1
+ATOM     37  CD2 LEU C 703      -5.415   5.316 -79.900  0.00  0.00           C 0
+ATOM     36  CD1 LEU C 703      -5.437   6.551 -82.080  0.00  0.00           C 0
+ATOM    560  OD1 ASP C 770     -12.880   8.605 -79.198  0.54  8.57           O 0
+ATOM   2371    N ASP C1006     -16.798   7.594 -72.534  0.78  3.28           N 0
+ATOM   2374    O ASP C1006     -17.756   8.548 -75.071  0.92  1.07           O 0
+ATOM   2375   CB ASP C1006     -16.087   9.912 -72.903  0.00  0.00           C 0
+ATOM    718   CD GLN C 791     -15.634  -2.636 -75.506  0.00  0.00           C 0
+ATOM    625  CD1 LEU C 778     -10.244  -3.466 -78.074  0.00  0.00           C 0
+ATOM    719  NE2 GLN C 791     -15.279  -2.374 -74.253  0.32  3.28           N 0
+ATOM    609  NH1 ARG C 776      -9.709   1.818 -79.044  0.00  0.00           N 1
+ATOM    607   NE ARG C 776      -8.576   2.680 -80.846  0.00  0.00           N 0
+ATOM    608   CZ ARG C 776      -8.566   2.040 -79.681  0.00  0.00           C 0
+ATOM    720  OE1 GLN C 791     -16.317  -1.859 -76.180  0.68  2.14           O 0
+ATOM   2369  OE1 GLU C1005     -17.249   2.915 -75.873  0.00  0.00           O 0
+ATOM    716   CB GLN C 791     -14.555  -3.816 -77.459  0.00  0.00           C 0
+ATOM    599   SG CYS C 775     -18.154  -1.288 -82.367  0.00  0.00           S 0
+ATOM    712    N GLN C 791     -13.399  -4.904 -79.328  0.58  1.09           N 0
+ATOM    736   CE MET C 793     -18.385  -2.830 -78.349  0.00  0.00           C 0
+ATOM    598   CB CYS C 775     -16.706  -0.839 -83.346  0.00  0.00           C 0
+ATOM    610  NH2 ARG C 776      -7.419   1.628 -79.152  0.50  5.47           N 0
+ATOM    565    O ASN C 771     -17.250   5.839 -80.999  0.47  2.14           O 0
+ATOM   1223   NZ LYS C 852     -17.118   0.584 -79.072  0.65  8.75           N 1
+ATOM    590    O VAL C 774     -16.164   3.341 -82.773  0.00  0.00           O 0
+ATOM   2370  OE2 GLU C1005     -18.142   4.645 -76.890  0.78  2.14           O 1
+ATOM    570    N PRO C 772     -18.148   7.569 -79.867  0.00  0.00           N 0
+ATOM    564    C ASN C 771     -17.311   7.045 -80.771  0.00  0.00           C 0
+ATOM    550    O VAL C 769     -12.297   5.182 -82.837  0.41  1.07           O 0
+ATOM    562    N ASN C 771     -15.059   7.545 -81.643  0.60  1.09           N 0
+ATOM   2368   CD GLU C1005     -17.786   4.044 -75.854  0.00  0.00           C 0
+ATOM    606   CD ARG C 776      -9.787   3.162 -81.498  0.00  0.00           C 0
+ATOM    555   CA ASP C 770     -12.654   7.752 -81.863  0.00  0.00           C 0
+ATOM    543    C SER C 768      -9.143   6.370 -85.129  0.00  0.00           C 0
+ATOM   2366   CB GLU C1005     -16.854   4.477 -73.554  0.00  0.00           C 0
+TER
+END

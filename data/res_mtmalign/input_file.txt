@@ -1,0 +1,4 @@
+/home/patricio/Documents/lfmtools/data/EGFR_HUMAN_3GT8C.pdb
+/home/patricio/Documents/lfmtools/data/BRAF_HUMAN_5HIED.pdb
+/home/patricio/Documents/lfmtools/data/MET_HUMAN_4IWDA.pdb
+/home/patricio/Documents/lfmtools/data/VGFR2_HUMAN_3VO3A.pdb

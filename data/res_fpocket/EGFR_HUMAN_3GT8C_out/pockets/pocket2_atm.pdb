@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     2:
+HEADER 0  - Pocket Score                      : -0.0015
+HEADER 1  - Drug Score                        : 0.0008
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.0110
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5030
+HEADER 5  - Mean B-factor of pocket residues  : 0.4321
+HEADER 6  - Hydrophobicity Score              : 2.8750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 314.1983
+HEADER 10  -Pocket volume (convex hull)       : 29.0943
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 4.3333
+HEADER 13 - Number of apolar alpha sphere     :     6
+HEADER 14 - Proportion of apolar alpha sphere : 0.3529
+ATOM    979   CB LYS C 823     -24.301  10.365 -83.928  0.00  0.00           C 0
+ATOM    568  ND2 ASN C 771     -18.617  10.016 -82.386  0.36  8.75           N 0
+ATOM    981   CD LYS C 823     -25.474  11.374 -81.986  0.00  0.00           C 0
+ATOM    583  CD2 HIS C 773     -22.709   8.020 -80.956  0.00  0.00           C 0
+ATOM    575   CG PRO C 772     -19.146   9.054 -78.363  0.00  0.00           C 0
+ATOM    951  CG1 VAL C 819     -29.544  10.673 -82.426  0.00  0.00           C 0
+ATOM    958   CG GLN C 820     -27.547   6.278 -80.445  0.00  0.00           C 0
+ATOM    983   NZ LYS C 823     -26.886  12.021 -80.072  0.00  0.00           N 1
+ATOM    924  ND2 ASN C 816     -32.412   8.613 -78.630  0.64  8.75           N 0
+ATOM    586  NE2 HIS C 773     -23.580   8.184 -79.906  0.73  3.28           N 0
+ATOM   2382    O MET C1007     -20.894  12.090 -75.174  0.62  6.43           O 0
+ATOM   2384   CG MET C1007     -22.186   8.296 -74.346  0.00  0.00           C 0
+ATOM   2386   CE MET C1007     -24.606   6.937 -74.129  0.00  0.00           C 0
+ATOM    585  CE1 HIS C 773     -24.201   7.040 -79.684  0.00  0.00           C 0
+ATOM   2381    C MET C1007     -21.183  10.952 -74.796  0.00  0.00           C 0
+ATOM    960  NE2 GLN C 820     -28.516   5.201 -78.507  0.59  8.75           N 0
+ATOM    959   CD GLN C 820     -27.519   5.197 -79.381  0.00  0.00           C 0
+TER
+END

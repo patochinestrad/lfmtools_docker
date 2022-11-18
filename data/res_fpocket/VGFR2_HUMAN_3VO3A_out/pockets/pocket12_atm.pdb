@@ -1,0 +1,35 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : -0.0571
+HEADER 1  - Drug Score                        : 0.0001
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 3.6791
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5489
+HEADER 5  - Mean B-factor of pocket residues  : 0.1359
+HEADER 6  - Hydrophobicity Score              : -0.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 3.1250
+HEADER 9  - Pocket volume (Monte Carlo)       : 89.1724
+HEADER 10  -Pocket volume (convex hull)       : 0.5370
+HEADER 11 - Charge Score                      :    -2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0625
+ATOM   1937   CA SER A1104       9.165 -32.385 -25.742  0.00  0.00           C 0
+ATOM   1948   CD PRO A1105      11.744 -32.967 -27.118  0.00  0.00           C 0
+ATOM   1892  OE1 GLU A1097      14.357 -30.172 -24.940  0.45  8.57           O 0
+ATOM   1560  OD1 ASP A1058      12.763 -36.014 -22.365  0.58  7.50           O 0
+ATOM   1561  OD2 ASP A1058      14.357 -34.783 -21.445  0.50  9.64           O 1
+ATOM    892   OG SER A 925      12.201 -28.596 -21.412  0.58  9.64           O 0
+ATOM   1934    O ALA A1103      10.129 -29.805 -25.927  0.36  1.07           O 0
+ATOM   1940   CB SER A1104       8.542 -33.549 -24.980  0.00  0.00           C 0
+ATOM   1941   OG SER A1104       9.413 -34.657 -25.012  0.68  2.14           O 0
+ATOM   1930    O GLY A1102       9.129 -28.231 -23.105  0.57  4.29           O 0
+ATOM   1936    N SER A1104       8.372 -31.178 -25.551  0.00  0.00           N 0
+ATOM   1674  CH2 TRP A1071      14.496 -34.750 -25.185  0.00  0.00           C 0
+ATOM   1672  CZ2 TRP A1071      14.954 -33.523 -25.607  0.00  0.00           C 0
+TER
+END

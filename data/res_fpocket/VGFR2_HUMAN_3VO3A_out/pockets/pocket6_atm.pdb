@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 0.0004
+HEADER 1  - Drug Score                        : 0.0002
+HEADER 2  - Number of alpha spheres           :    24
+HEADER 3  - Mean alpha-sphere radius          : 4.0110
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6735
+HEADER 5  - Mean B-factor of pocket residues  : 0.1001
+HEADER 6  - Hydrophobicity Score              : 12.1429
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 3.7143
+HEADER 9  - Pocket volume (Monte Carlo)       : 321.4264
+HEADER 10  -Pocket volume (convex hull)       : 9.6828
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 3.0000
+HEADER 13 - Number of apolar alpha sphere     :     4
+HEADER 14 - Proportion of apolar alpha sphere : 0.1667
+ATOM    675  NE2 HIS A 895      32.264 -18.017 -25.593  0.57  6.56           N 0
+ATOM    672  CD2 HIS A 895      33.247 -18.544 -24.792  0.00  0.00           C 0
+ATOM   1224   CB PHE A1018      33.500 -21.845 -26.430  0.00  0.00           C 0
+ATOM   1227  CD2 PHE A1018      35.692 -21.104 -25.466  0.00  0.00           C 0
+ATOM   1193    O LYS A1014      30.649 -20.752 -28.087  0.45  2.14           O 0
+ATOM   1218  OE1 GLU A1017      32.165 -19.086 -31.882  0.45  3.21           O 0
+ATOM   1220    N PHE A1018      32.803 -22.680 -28.621  0.00  0.00           N 0
+ATOM   1248   CB SER A1021      37.641 -23.464 -29.764  0.00  0.00           C 0
+ATOM   1214    O GLU A1017      34.070 -23.670 -30.193  0.65  2.14           O 0
+ATOM   1216   CG GLU A1017      32.768 -21.364 -32.169  0.00  0.00           C 0
+ATOM   2361   OG SER A1154      33.361 -21.735 -35.671  0.48  9.64           O 0
+ATOM   1245   CA SER A1021      37.668 -24.978 -29.956  0.00  0.00           C 0
+ATOM   1219  OE2 GLU A1017      32.983 -19.696 -33.822  0.00  0.00           O 1
+ATOM   1217   CD GLU A1017      32.619 -19.951 -32.661  0.00  0.00           C 0
+ATOM   1221   CA PHE A1018      33.890 -22.648 -27.666  0.00  0.00           C 0
+ATOM   1249   OG SER A1021      37.501 -23.106 -28.397  0.00  0.00           O 0
+ATOM   1244    N SER A1021      36.309 -25.548 -29.889  0.78  1.09           N 0
+ATOM   1242    O ALA A1020      36.982 -27.579 -30.614  0.59  4.29           O 0
+ATOM   1241    C ALA A1020      36.081 -26.816 -30.235  0.00  0.00           C 0
+ATOM   1243   CB ALA A1020      33.878 -26.977 -31.425  0.00  0.00           C 0
+TER
+END
