@@ -3,6 +3,7 @@ import os
 import subprocess
 import shutil
 import pandas as pd
+import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 from src import fpocketAnalysis, helper_funcs
 
@@ -18,15 +19,12 @@ if os.path.exists(path) == False:
 
 filenames = helper_funcs.pdb_selector(path)
 
-if st.checkbox("Run Fpocket"):
+if filenames:
     if st.button("Run"):
         with st.spinner("Analyzing pockets. Please wait."):
             for i in filenames:
                 subprocess.run(["fpocket", "-f", i])
         st.success("Done")
-
-if st.checkbox("Analyse Results"):
-    if st.button("Analyse"):
         res_fpocket = os.path.join(path, "res_fpocket")
         try:
             os.mkdir(res_fpocket)
