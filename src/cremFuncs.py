@@ -8,12 +8,6 @@ Functions to generate novel ligands from one .pdbqt file.
 """
 
 
-def smilesConversion(file):
-    with open(file, "r") as pdbqt:
-        mol = MolFromPDBQTBlock(pdbqt.read())
-        return mol
-
-
 def generateNovelCompoundsList(mol, grow_mode, radius):
     modes = ["Mutate", "Grow"]
     if grow_mode == "Mutate":
@@ -26,13 +20,3 @@ def generateNovelCompoundsList(mol, grow_mode, radius):
             grow_mol(mol, db_name="./data/crem_db/crem_db_sa2.db", radius=radius)
         )
         return new_mols
-
-
-def compoundListToPDBQT(mol_list, outdir_name):
-    for idx, i in enumerate(mol_list):
-        with open(os.path.join(outdir_name, f"newmol_{idx}.pdbqt"), "w") as pdbqt:
-            mol = Chem.MolFromSmiles(i)
-            Chem.AllChem.EmbedMolecule(mol)
-            pdbqt_block = MolToPDBQTBlock(mol, addHs=True)
-            pdbqt.write(pdbqt_block)
-            pdbqt.close()

@@ -12,11 +12,9 @@ path = st.text_input("Input folder with PDB files")
 if os.path.exists(path) == False:
     st.warning("Please enter a valid path")
 
-
-filenames = helper_funcs.pdb_selector(path)
-
-if st.checkbox("Convert to PDBQT"):
-    if st.button("Run"):
+else:
+    filenames = helper_funcs.pdb_selector(path)
+    if st.button("Convert to PDBQT"):
         res_pdbqt = os.path.join(path, "res_pdbqt_conversion")
         try:
             os.mkdir(res_pdbqt)
@@ -29,9 +27,6 @@ if st.checkbox("Convert to PDBQT"):
                 try:
                     shutil.move(i, res_pdbqt)
                 except:
-                    st.warning(
-                        "PDBQT Conversion for %s was already done. Press Ok to continue with the next one."
-                        % i
-                    )
+                    st.warning("PDBQT Conversion for %s was already done." % i)
                     os.remove(i)
             st.success("Done")

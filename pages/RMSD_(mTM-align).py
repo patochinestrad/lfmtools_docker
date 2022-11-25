@@ -6,7 +6,7 @@ from stmol import showmol
 import py3Dmol
 
 
-st.title("Mammoth RMSD Analysis")
+st.title("mTM-Align RMSD Analysis")
 
 st.subheader("Select one PDB file to be compared to the rest with mTM-Align.")
 
@@ -14,10 +14,6 @@ path = st.text_input("Input folder with PDB files")
 
 if os.path.exists(path) == False:
     st.warning("Please enter a valid path")
-
-elif not [i for i in os.listdir(path) if i.endswith(".pdb")]:
-    st.warning("No PDB file in this directory")
-
 
 else:
     with st.expander("PDB files in folder"):
@@ -51,7 +47,7 @@ else:
                 [st.session_state["mtmAlign"], "-i", input_file, "-outdir", output_dir]
             )
 
-    if st.checkbox("Analyze results"):
+    if st.checkbox("Show results"):
         rmsd_df, TM_df = mTMAnalysis.mTMAlign(output_dir)
         st.write("RMSD Matrix")
         st.dataframe(rmsd_df, use_container_width=True)
@@ -80,5 +76,4 @@ else:
                 view.addModelsAsFrames(system)
                 view.setStyle({"model": -1}, {"cartoon": {"color": "spectrum"}})
                 view.zoomTo()
-                if st.button("View"):
-                    showmol(view)
+                showmol(view)

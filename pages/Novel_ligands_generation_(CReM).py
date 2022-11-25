@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from src.helper_funcs import pdbqt_selector
+from src.autodockFuncs import *
 from src.cremFuncs import *
 from random import sample
 
@@ -37,7 +38,7 @@ else:
                 except FileExistsError:
                     st.warning(f"New ligands already generated for ligand {pdbqt[:-6]}")
 
-                mol = smilesConversion(pdbqt_path)
+                mol = readPDBQT(pdbqt_path)
                 new_mols = set(
                     generateNovelCompoundsList(mol, grow_mode=grow_mode, radius=radius)
                 )
@@ -52,5 +53,12 @@ else:
             else:
                 mols_to_make = sample(new_mols, n_to_keep)
 
-            compoundListToPDBQT(mols_to_make, outpath)
+            compoundListToPDB(mols_to_make, outpath)
+
+            outpdbqts = os.path.join(outpath, "pdbqt")
+            try:
+                os.mkdir(outpdbqts)
+            except FileExistsError:
+                st.warning(f"New ligands already generated for ligand {pdbqt[:-6]}")
+
             st.success(f"Converted {len(mols_to_make)} new_ligands to .pdbqt format.")
