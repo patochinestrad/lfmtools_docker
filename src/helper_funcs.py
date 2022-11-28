@@ -1,4 +1,5 @@
 import os
+import zipfile
 import streamlit as st
 
 
@@ -24,3 +25,13 @@ def pdbqt_selector(folder_path):
         return [os.path.join(folder_path, i) for i in selected_filenames]
     else:
         return st.write("No PDB file in this directory")
+
+
+def zipdir(path, ziph):
+    # ziph is zipfile handle
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            ziph.write(
+                os.path.join(root, file),
+                os.path.relpath(os.path.join(root, file), os.path.join(path, "..")),
+            )

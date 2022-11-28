@@ -60,7 +60,11 @@ def pdbsToPDBQT(indir_name, outdir_name):
                 "bonds_hydrogens",
             ]
         )
-    for i in [os.path.join(i) for i in os.listdir(indir_name) if i.endswith("pdbqt")]:
+    for i in [
+        os.path.join(indir_name, i)
+        for i in os.listdir(indir_name)
+        if i.endswith("pdbqt")
+    ]:
         shutil.move(i, outdir_name)
 
 
@@ -69,8 +73,3 @@ def pdbsToPDBQT(indir_name, outdir_name):
 # compoundListToPDB(
 #     new_mols, "/home/patricio/Documents/streamlit_test/ligands_test/C8_pdbs/"
 # )
-
-pdbsToPDBQT(
-    "/home/patricio/Documents/streamlit_test/ligands_test/C8_pdbs/",
-    "/home/patricio/Documents/streamlit_test/ligands_test/C8_pdbs/C8_pdbqts/",
-)
