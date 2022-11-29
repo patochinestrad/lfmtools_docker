@@ -266,4 +266,4 @@ dependencies:
     - websocket-client==1.4.2
     - widgetsnbextension==3.5.2
     - zipp==3.10.0
-prefix: /home/patricio/anaconda3/envs/lfmtools
+
