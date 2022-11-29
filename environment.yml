@@ -94,6 +94,7 @@ dependencies:
   - libzopfli=1.0.3=h9c3ff4c_0
   - locket=1.0.0=pyhd8ed1ab_0
   - lz4-c=1.9.3=h9c3ff4c_1
+  - matplotlib-base=3.6.2=py310h8d5ebf3_0
   - munkres=1.1.4=pyh9f0ad1d_0
   - ncurses=6.3=h27087fc_1
   - networkx=2.8.8=pyhd8ed1ab_0

@@ -35,3 +35,5 @@ def zipdir(path, ziph):
                 os.path.join(root, file),
                 os.path.relpath(os.path.join(root, file), os.path.join(path, "..")),
             )
+        for directory in dirs:
+            ziph.write(os.path.join(root, directory))

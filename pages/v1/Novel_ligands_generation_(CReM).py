@@ -1,9 +1,7 @@
 import streamlit as st
 import os
-from src.helper_funcs import pdbqt_selector
-from src.autodockFuncs import *
-from src.cremFuncs import *
 from random import sample
+from src import helper_funcs, autodockFuncs
 
 st.title("Novel ligand generation with CReM")
 

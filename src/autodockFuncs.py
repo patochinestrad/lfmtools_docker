@@ -19,14 +19,10 @@ def readPDBQT(file):
 def generateNovelCompoundsList(mol, grow_mode, radius):
     modes = ["Mutate", "Grow"]
     if grow_mode == "Mutate":
-        new_mols = list(
-            mutate_mol(mol, db_name="./data/crem_db/crem_db_sa2.db", radius=radius)
-        )
+        new_mols = list(mutate_mol(mol, db_name="./crem_db_sa2.db", radius=radius))
         return new_mols
     elif grow_mode == "Grow":
-        new_mols = list(
-            grow_mol(mol, db_name="./data/crem_db/crem_db_sa2.db", radius=radius)
-        )
+        new_mols = list(grow_mol(mol, db_name="./crem_db_sa2.db", radius=radius))
         return new_mols
 
 
@@ -43,7 +39,7 @@ def compoundListToPDB(mol_list, outdir_name):
             pdb.close()
 
 
-def pdbsToPDBQT(indir_name, outdir_name):
+def ligandToPDBQT(indir_name, outdir_name):
     for i in [
         os.path.join(indir_name, i) for i in os.listdir(indir_name) if i.endswith("pdb")
     ]:
@@ -53,6 +49,31 @@ def pdbsToPDBQT(indir_name, outdir_name):
                 "src/prepare_ligand4.py",
                 "-v",
                 "-l",
+                i,
+                "-o",
+                i[:-4] + ".pdbqt",
+                "-A",
+                "bonds_hydrogens",
+            ]
+        )
+    for i in [
+        os.path.join(indir_name, i)
+        for i in os.listdir(indir_name)
+        if i.endswith("pdbqt")
+    ]:
+        shutil.move(i, outdir_name)
+
+
+def receptorToPDBQT(indir_name, outdir_name):
+    for i in [
+        os.path.join(indir_name, i) for i in os.listdir(indir_name) if i.endswith("pdb")
+    ]:
+        subprocess.call(
+            [
+                "python",
+                "src/prepare_receptor4.py",
+                "-v",
+                "-r",
                 i,
                 "-o",
                 i[:-4] + ".pdbqt",
