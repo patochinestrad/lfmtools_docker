@@ -1,4 +1,4 @@
-name: lfmtools
+name: webapp
 channels:
   - conda-forge
   - defaults
