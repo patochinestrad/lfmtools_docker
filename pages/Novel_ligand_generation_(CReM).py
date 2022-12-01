@@ -26,7 +26,6 @@ if file:
     )
 
     with TemporaryDirectory() as tempDir:
-        st.write(tempDir)
 
         # '''
         # Save input files to tempDir to work on them
@@ -34,7 +33,7 @@ if file:
 
         with open(os.path.join(tempDir, file.name), "wb") as f:
             f.write(file.getbuffer())
-        st.write(os.listdir(tempDir))
+
         if st.button("Generate novel ligands"):
             with st.spinner("Generating new molecules. Please wait."):
                 outpath = os.path.join(tempDir, file.name[:-6])

@@ -18,10 +18,10 @@ def readPDBQT(file):
 
 def generateNovelCompoundsList(mol, grow_mode, radius):
     if grow_mode == "Mutate":
-        new_mols = list(mutate_mol(mol, db_name="~/app/crem_db_sa2.db", radius=radius))
+        new_mols = list(mutate_mol(mol, db_name="/app/crem_db_sa2.db", radius=radius))
         return new_mols
     elif grow_mode == "Grow":
-        new_mols = list(grow_mol(mol, db_name="~/app/crem_db_sa2.db", radius=radius))
+        new_mols = list(grow_mol(mol, db_name="/app/crem_db_sa2.db", radius=radius))
         return new_mols
 
 

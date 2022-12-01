@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import streamlit as st
 import subprocess
+import seaborn as sns
 
 
 def mTMInputFile(path):
@@ -53,3 +54,23 @@ def mTMAlignAnalysis(out_path):
     TM_df = TM_df.set_index(0)
 
     return rmsd_df, TM_df
+
+
+def plotSimilarityHeatmap(simdf, comparison):
+    header = simdf.iloc[0]
+    simdf = simdf[1:]
+    simdf.columns = header
+    simdf = simdf.apply(pd.to_numeric)
+    ax = sns.heatmap(
+        simdf,
+        vmin=0,
+        cbar_kws={"label": f"{comparison}"},
+        annot=True,
+    )
+
+    ax.set(
+        title=f"{comparison} Matrix",
+        xlabel="Protein",
+        ylabel="Protein",
+    )
+    return ax

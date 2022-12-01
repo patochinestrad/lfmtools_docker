@@ -4,6 +4,9 @@ from src import mTMAnalysis, helper_funcs
 from tempfile import TemporaryDirectory
 import zipfile
 import io
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 
 st.title("mTM-Align RMSD Analysis")
 
@@ -36,9 +39,24 @@ if files:
                     os.path.join(tempDir, "res_mtmalign")
                 )
                 st.write("RMSD Matrix")
-                st.dataframe(rmsd_df, use_container_width=True)
+
+                rmsdfig, rmsdax = plt.subplots()
+                rmsdax = mTMAnalysis.plotSimilarityHeatmap(rmsd_df, "RMSD")
+                st.write(rmsdfig)
+                plt.savefig(
+                    os.path.join(tempDir, "rmsd_heatmap.png"),
+                    dpi=300,
+                    bbox_inches="tight",
+                )
                 st.write("TM Score Matrix")
-                st.dataframe(TM_df, use_container_width=True)
+                tmfig, tmax = plt.subplots()
+                tmax = mTMAnalysis.plotSimilarityHeatmap(TM_df, "TM-Score")
+                st.write(tmfig)
+                plt.savefig(
+                    os.path.join(tempDir, "tmscore_heatmap.png"),
+                    dpi=300,
+                    bbox_inches="tight",
+                )
 
         with io.BytesIO() as buffer:
 
