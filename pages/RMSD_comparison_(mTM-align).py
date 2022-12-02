@@ -57,15 +57,15 @@ if files:
                     dpi=300,
                     bbox_inches="tight",
                 )
+            if rmsd_df is not None:
+                with io.BytesIO() as buffer:
 
-        with io.BytesIO() as buffer:
-
-            with zipfile.ZipFile(buffer, mode="w") as archive:
-                helper_funcs.zipdir(tempDir, archive)
-            buffer.seek(0)
-            st.download_button(
-                "Download results",
-                data=buffer,
-                file_name="mtmalign_results.zip",
-                mime="application/zip",
-            )
+                    with zipfile.ZipFile(buffer, mode="w") as archive:
+                        helper_funcs.zipdir(tempDir, archive)
+                    buffer.seek(0)
+                    st.download_button(
+                        "Download results",
+                        data=buffer,
+                        file_name="mtmalign_results.zip",
+                        mime="application/zip",
+                    )
