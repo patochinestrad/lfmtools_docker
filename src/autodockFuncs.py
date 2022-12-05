@@ -18,10 +18,22 @@ def readPDBQT(file):
 
 def generateNovelCompoundsList(mol, grow_mode, radius):
     if grow_mode == "Mutate":
-        new_mols = list(mutate_mol(mol, db_name="/app/crem_db_sa2.db", radius=radius))
+        new_mols = list(
+            mutate_mol(
+                mol,
+                db_name="/home/patricio/Documents/docker_version/crem_db_sa2.db",
+                radius=radius,
+            )
+        )
         return new_mols
     elif grow_mode == "Grow":
-        new_mols = list(grow_mol(mol, db_name="/app/crem_db_sa2.db", radius=radius))
+        new_mols = list(
+            grow_mol(
+                mol,
+                db_name="/home/patricio/Documents/docker_version/crem_db_sa2.db",
+                radius=radius,
+            )
+        )
         return new_mols
 
 
@@ -86,10 +98,3 @@ def receptorToPDBQT(indir_name, outdir_name):
         if i.endswith("pdbqt")
     ]:
         shutil.move(i, outdir_name)
-
-
-# testmol = readPDBQT("/home/patricio/Documents/streamlit_test/ligands_test/C8.pdbqt")
-# new_mols = generateNovelCompoundsList(testmol, "Mutate", 2)
-# compoundListToPDB(
-#     new_mols, "/home/patricio/Documents/streamlit_test/ligands_test/C8_pdbs/"
-# )

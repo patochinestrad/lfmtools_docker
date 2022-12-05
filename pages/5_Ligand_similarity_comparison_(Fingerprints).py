@@ -59,7 +59,7 @@ if files:
                     img = io.BytesIO()
                     fn = f"{fptype} heatmap.png"
 
-                    plt.savefig(fn, dpi=300, bbox_inches="tight")
+                    plt.savefig(os.path.join(tempDir, fn), dpi=300, bbox_inches="tight")
 
                     with open(fn, "rb") as img:
                         st.download_button(
