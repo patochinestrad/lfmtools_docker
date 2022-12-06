@@ -4,6 +4,7 @@ import pandas as pd
 from prody import parsePDB, writePDB, pathPDBFolder
 from tempfile import TemporaryDirectory
 import os
+import nglview as nv
 
 
 def getEntryTXT(upid):
@@ -46,7 +47,10 @@ def listLigands(entry, chainid):
         pathPDBFolder(tempDir)
         ppdb = parsePDB(entry, chain=chainid)
         hetatm = ppdb.select("hetatm and not water")
-        return list(set([i for i in hetatm.getResnames()]))
+        if hetatm:
+            return list(set([i for i in hetatm.getResnames()]))
+        else:
+            return st.write("This entry has no ligand")
 
 
 def downloadPDB(entry, chainid, hetatoms, dir):
@@ -61,3 +65,48 @@ def downloadPDB(entry, chainid, hetatoms, dir):
         else:
             protein = ppdb.select("protein and not water")
         return writePDB(os.path.join(dir, f"{entry}{chainid}.pdb"), protein)
+
+
+def displayPDB(pdbname, assembly_number):
+    return st.components.v1.html(
+        f"""
+                                    <html lang="en">
+                                        <head>
+                                            <meta charset="utf-8" />
+                                            <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=10.0">
+                                            
+                                            
+                                            
+                                            <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+                                            
+                                            <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-lite.js" charset="utf-8"></script>
+                                            
+                                            <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js" charset="utf-8"></script>
+
+                                            <link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.1.0.css">
+                                            <script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-component-3.1.0.js"></script>
+                                            <style>
+                                                #myViewer{{
+                                                float:left;
+                                                width:800px;
+                                                height: 800px;
+                                                position:relative;
+                                                }}
+                                            </style>
+                                        </head>
+                                        <body>
+
+                                        
+                                            
+                                    
+                                            
+                                            <div id="myViewer">
+                                                <pdbe-molstar id="pdbeMolstarComponent" molecule-id="{pdbname.lower()}" hide-controls="false" assembly-id="{assembly_number}"></pdbe-molstar>
+                                            </div>
+                                            
+                                        </body>
+                                    </html>
+                                    """,
+        width=900,
+        height=1200,
+    )
