@@ -4,3 +4,4 @@
 
 
 ### Hay que agregar la pagina y funciones para interacciones con plip y fingerprint interactions
+### robar de aca https://ljmartin.github.io/sideprojects/ifp.html
