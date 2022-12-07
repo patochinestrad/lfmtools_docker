@@ -26,7 +26,10 @@ if files:
         for file in files:
             with open(os.path.join(tempDir, file.name), "wb") as f:
                 f.write(file.getbuffer())
-
+        st.caption("Image output configurations")
+        annot = st.checkbox("Show RMSD and TM-Score values in cells?")
+        dpi = st.number_input("Select image DPI", value=300)
+        img_format = st.selectbox("Select image format", ["png", "svg", "pdf"])
         if st.button("Run all vs all comparison"):
             with st.spinner("Comparing structures. Please wait."):
                 mTMAnalysis.mTMInputFile(tempDir)
@@ -38,23 +41,24 @@ if files:
                 rmsd_df, TM_df = mTMAnalysis.mTMAlignAnalysis(
                     os.path.join(tempDir, "res_mtmalign")
                 )
+
                 st.write("RMSD Matrix")
 
                 rmsdfig, rmsdax = plt.subplots()
-                rmsdax = mTMAnalysis.plotSimilarityHeatmap(rmsd_df, "RMSD")
+                rmsdax = mTMAnalysis.plotSimilarityHeatmap(rmsd_df, "RMSD", annot)
                 st.write(rmsdfig)
                 plt.savefig(
-                    os.path.join(tempDir, "rmsd_heatmap.png"),
-                    dpi=300,
+                    os.path.join(tempDir, f"rmsd_heatmap.{img_format}"),
+                    dpi=dpi,
                     bbox_inches="tight",
                 )
                 st.write("TM Score Matrix")
                 tmfig, tmax = plt.subplots()
-                tmax = mTMAnalysis.plotSimilarityHeatmap(TM_df, "TM-Score")
+                tmax = mTMAnalysis.plotSimilarityHeatmap(TM_df, "TM-Score", annot)
                 st.write(tmfig)
                 plt.savefig(
-                    os.path.join(tempDir, "tmscore_heatmap.png"),
-                    dpi=300,
+                    os.path.join(tempDir, f"tmscore_heatmap.{img_format}"),
+                    dpi=dpi,
                     bbox_inches="tight",
                 )
             if rmsd_df is not None:

@@ -51,17 +51,16 @@ if files:
                         fptype = fp
 
                 sim_list = tanimotoSimilarity(fpdict)
-                fig, ax = plt.subplots()
-                ax = plotSimilarityHeatmap(sim_list, fptype=fptype, annotate=annotate)
-                st.write(fig)
+            fig, ax = plt.subplots()
+            ax = plotSimilarityHeatmap(sim_list, fptype=fptype, annotate=annotate)
+            st.write(fig)
 
-                if fig:
-                    img = io.BytesIO()
-                    fn = f"{fptype} heatmap.png"
+            img = io.BytesIO()
+            fn = f"{fptype} heatmap.png"
 
-                    plt.savefig(os.path.join(tempDir, fn), dpi=300, bbox_inches="tight")
+            plt.savefig(os.path.join(tempDir, fn), dpi=300, bbox_inches="tight")
 
-                    with open(fn, "rb") as img:
-                        st.download_button(
-                            "Download image", data=img, file_name=fn, mime="image/png"
-                        )
+            with open(os.path.join(tempDir, fn), "rb") as img:
+                st.download_button(
+                    "Download image", data=img, file_name=fn, mime="image/png"
+                )

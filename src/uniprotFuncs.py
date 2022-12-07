@@ -53,7 +53,7 @@ def listLigands(entry, chainid):
             return st.write("This entry has no ligand")
 
 
-def downloadPDB(entry, chainid, hetatoms, dir):
+def downloadPDB(entry, chainid, hetatoms: list, dir):
     with TemporaryDirectory() as tempDir:
         pathPDBFolder(tempDir)
         ppdb = parsePDB(entry, chain=chainid)

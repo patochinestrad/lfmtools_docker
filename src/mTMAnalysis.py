@@ -20,6 +20,7 @@ def mTMInputFile(path):
 
 
 def mTMAlignRun(input_file, out_path):
+    print(input_file)
     subprocess.call(
         [
             "./src/programs/mTM-align",
@@ -29,7 +30,6 @@ def mTMAlignRun(input_file, out_path):
             out_path,
         ]
     )
-    return st.success("Done")
 
 
 def mTMAlignAnalysis(out_path):
@@ -56,7 +56,7 @@ def mTMAlignAnalysis(out_path):
     return rmsd_df, TM_df
 
 
-def plotSimilarityHeatmap(simdf, comparison):
+def plotSimilarityHeatmap(simdf, comparison, annotate):
     header = simdf.iloc[0]
     simdf = simdf[1:]
     simdf.columns = header
@@ -65,7 +65,7 @@ def plotSimilarityHeatmap(simdf, comparison):
         simdf,
         vmin=0,
         cbar_kws={"label": f"{comparison}"},
-        annot=True,
+        annot=annotate,
     )
 
     ax.set(
