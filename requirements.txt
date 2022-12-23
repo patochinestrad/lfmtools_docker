@@ -62,7 +62,7 @@ pickleshare==0.7.5
 Pillow==9.3.0
 pipreqs==0.4.11
 platformdirs==2.6.0
-ProDy==2.3.1
+ProDy @ git+https://github.com/prody/ProDy@master
 prompt-toolkit==3.0.36
 protobuf==3.20.3
 psutil==5.9.4
