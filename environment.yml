@@ -157,7 +157,7 @@ dependencies:
     - altair==4.2.0
     - asttokens==2.2.1
     - attrs==22.1.0
-    - git+git://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+    - git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
     - backcall==0.2.0
     - blinker==1.5
     - cachetools==5.2.0
