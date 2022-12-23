@@ -1,3 +1,4 @@
+six
 crem==0.2.9
 matplotlib==3.6.2
 nglview==3.0.3
