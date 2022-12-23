@@ -1,0 +1,14 @@
+crem==0.2.9
+matplotlib==3.6.2
+nglview==3.0.3
+oddt==0.7
+pandas==1.5.2
+pandas_profiling==3.6.1
+ProDy==2.3.1
+py3Dmol==1.8.1
+rdkit==2022.9.3
+seaborn==0.12.1
+setuptools==65.5.0
+stmol==0.0.9
+streamlit==1.16.0
+streamlit_pandas_profiling==0.1.3
