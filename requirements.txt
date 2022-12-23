@@ -121,4 +121,4 @@ wcwidth==0.2.5
 widgetsnbextension==4.0.5
 yarg==0.1.9
 zipp==3.11.0
-oddt @ git+https://github.com/oddt/oddt@master
+
