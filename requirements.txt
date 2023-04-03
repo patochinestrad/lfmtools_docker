@@ -5,7 +5,7 @@ attrs==22.2.0
 AutoDockTools-py3 @ git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3@master
 Babel==2.11.0
 backcall==0.2.0
-biopython==1.79
+biopython==1.76
 blinker==1.5
 cachetools==5.2.0
 charset-normalizer==2.1.1
