@@ -2,8 +2,6 @@
 
 FROM continuumio/miniconda3
 
-EXPOSE 8501
-
 WORKDIR /app
 
 # ES IMPORTANTE PONER BIEN LA UBICACIONES DE LA DATABASE!!!
@@ -34,9 +32,15 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 run conda activate lfmtools-docker
 
-RUN conda install -c conda-forge gcc=12.1.0 gxx=12.1.0 rdkit oddt fpocket
+RUN conda install -c conda-forge gcc=12.1.0 gxx=12.1.0 
 
-RUN pip install seaborn prody streamlit-pandas-profiling crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+RUN conda install -c conda-forge fpocket
+
+RUN conda install -c conda-forge rdkit
+
+RUN pip install seaborn prody streamlit crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+
+EXPOSE 8501
 
 RUN ["chmod", "+x", "entrypoint.sh"]
 
