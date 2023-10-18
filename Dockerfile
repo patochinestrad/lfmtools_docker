@@ -38,7 +38,7 @@ RUN conda install -c conda-forge fpocket
 
 RUN conda install -c conda-forge rdkit
 
-RUN pip install seaborn prody streamlit crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+RUN pip install seaborn nglview prody streamlit crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
 
 EXPOSE 8501
 
