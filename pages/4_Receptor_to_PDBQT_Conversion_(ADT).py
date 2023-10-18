@@ -12,10 +12,10 @@ st.subheader(
     "Upload one or several PDB files to be converted to PDBQT with AutoDock Tools"
 )
 
-files = st.file_uploader("Upload PDB files", type="pdb", accept_multiple_files=True)
+files = st.file_uploader("Upload PDB files", type="pdb",
+                         accept_multiple_files=True)
 if files:
     with TemporaryDirectory() as tempDir:
-
         # '''
         # Save input files to tempDir to work on them
         # '''
@@ -32,14 +32,15 @@ if files:
                     tempDir,
                     outdir,
                 )
+                st.success("Done")
 
-        with io.BytesIO() as buffer:
-            with zipfile.ZipFile(buffer, mode="w") as archive:
-                helper_funcs.zipdir(tempDir, archive)
-            buffer.seek(0)
-            st.download_button(
-                "Download results",
-                data=buffer,
-                file_name="pdbqt_conversion.zip",
-                mime="application/zip",
-            )
+            with io.BytesIO() as buffer:
+                with zipfile.ZipFile(buffer, mode="w") as archive:
+                    helper_funcs.zipdir(tempDir, archive)
+                buffer.seek(0)
+                st.download_button(
+                    "Download results",
+                    data=buffer,
+                    file_name="pdbqt_conversion.zip",
+                    mime="application/zip",
+                )

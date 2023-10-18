@@ -32,13 +32,11 @@ RUN echo "conda activate lfmtools-docker" > ~/.bashrc
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-RUN conda install -c conda-forge gcc=12.1.0 gxx=12.1.0
+run conda activate lfmtools-docker
 
-RUN conda install -c conda-forge rdkit oddt fpocket pip prody
+RUN conda install -c conda-forge gcc=12.1.0 gxx=12.1.0 rdkit oddt fpocket
 
-RUN pip install seaborn streamlit-pandas-profiling crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
-
-RUN pip install nglview
+RUN pip install seaborn prody streamlit-pandas-profiling crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
 
 RUN ["chmod", "+x", "entrypoint.sh"]
 

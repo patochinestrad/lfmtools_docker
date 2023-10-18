@@ -9,10 +9,11 @@ import io
 st.title("Novel ligand generation with CReM")
 
 st.subheader(
-    "Input one ligand in pdbqt format to generate novel ligands using [CReM Database SA2](http://www.qsar4u.com/pages/crem.php) "
+    "Input one ligand in pdb format to generate novel ligands using [CReM Database SA2](http://www.qsar4u.com/pages/crem.php) "
 )
 
-file = st.file_uploader("Upload PDBQT file", type="pdbqt", accept_multiple_files=False)
+file = st.file_uploader("Upload PDB file", type="pdb",
+                        accept_multiple_files=False)
 
 
 if file:
@@ -26,7 +27,6 @@ if file:
     )
 
     with TemporaryDirectory() as tempDir:
-
         # '''
         # Save input files to tempDir to work on them
         # '''
@@ -42,7 +42,7 @@ if file:
                 os.mkdir(pdbqt_output)
                 pdbqt_path = os.path.join(tempDir, file.name)
 
-                mol = autodockFuncs.readPDBQT(pdbqt_path)
+                mol = autodockFuncs.readPDB(pdbqt_path)
                 new_mols = autodockFuncs.generateNovelCompoundsList(
                     mol, grow_mode, radius
                 )
@@ -61,13 +61,13 @@ if file:
                 autodockFuncs.ligandToPDBQT(outpath, pdbqt_output)
                 st.success("Done!")
 
-        with io.BytesIO() as buffer:
-            with zipfile.ZipFile(buffer, mode="w") as archive:
-                helper_funcs.zipdir(tempDir, archive)
-            buffer.seek(0)
-            st.download_button(
-                "Download results",
-                data=buffer,
-                file_name="novel_ligands.zip",
-                mime="application/zip",
-            )
+            with io.BytesIO() as buffer:
+                with zipfile.ZipFile(buffer, mode="w") as archive:
+                    helper_funcs.zipdir(tempDir, archive)
+                buffer.seek(0)
+                st.download_button(
+                    "Download results",
+                    data=buffer,
+                    file_name="novel_ligands.zip",
+                    mime="application/zip",
+                )

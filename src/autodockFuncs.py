@@ -1,5 +1,4 @@
 from rdkit import Chem
-from oddt.toolkits.extras.rdkit import *
 from crem.crem import mutate_mol, grow_mol
 import shutil
 import os
@@ -10,9 +9,9 @@ Functions to generate novel ligands from one .pdbqt file.
 """
 
 
-def readPDBQT(file):
+def readPDB(file):
     with open(file, "r") as pdbqt:
-        mol = MolFromPDBQTBlock(pdbqt.read())
+        mol = Chem.MolFromPDBBlock(pdbqt.read())
         return mol
 
 
@@ -21,7 +20,7 @@ def generateNovelCompoundsList(mol, grow_mode, radius):
         new_mols = list(
             mutate_mol(
                 mol,
-                db_name="/home/patricio/Documents/docker_version/crem_db_sa2.db",
+                db_name="crem_db_sa2.db",
                 radius=radius,
             )
         )
@@ -30,7 +29,7 @@ def generateNovelCompoundsList(mol, grow_mode, radius):
         new_mols = list(
             grow_mol(
                 mol,
-                db_name="/home/patricio/Documents/docker_version/crem_db_sa2.db",
+                db_name="crem_db_sa2.db",
                 radius=radius,
             )
         )
@@ -54,19 +53,17 @@ def ligandToPDBQT(indir_name, outdir_name):
     for i in [
         os.path.join(indir_name, i) for i in os.listdir(indir_name) if i.endswith("pdb")
     ]:
-        subprocess.call(
-            [
-                "python",
-                "src/prepare_ligand4.py",
-                "-v",
-                "-l",
-                i,
-                "-o",
-                i[:-4] + ".pdbqt",
-                "-A",
-                "bonds_hydrogens",
-            ]
-        )
+        subprocess.call([
+            "python",
+            "src/prepare_ligand4.py",
+            "-v",
+            "-l",
+            i,
+            "-o",
+            i[:-4] + ".pdbqt",
+            "-A",
+            "bonds_hydrogens",
+        ])
     for i in [
         os.path.join(indir_name, i)
         for i in os.listdir(indir_name)
@@ -79,19 +76,17 @@ def receptorToPDBQT(indir_name, outdir_name):
     for i in [
         os.path.join(indir_name, i) for i in os.listdir(indir_name) if i.endswith("pdb")
     ]:
-        subprocess.call(
-            [
-                "python",
-                "src/prepare_receptor4.py",
-                "-v",
-                "-r",
-                i,
-                "-o",
-                i[:-4] + ".pdbqt",
-                "-A",
-                "bonds_hydrogens",
-            ]
-        )
+        subprocess.call([
+            "python",
+            "src/prepare_receptor4.py",
+            "-v",
+            "-r",
+            i,
+            "-o",
+            i[:-4] + ".pdbqt",
+            "-A",
+            "bonds_hydrogens",
+        ])
     for i in [
         os.path.join(indir_name, i)
         for i in os.listdir(indir_name)

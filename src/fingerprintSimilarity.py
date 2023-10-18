@@ -1,22 +1,39 @@
 from rdkit import Chem, DataStructs
 from rdkit.Chem.Scaffolds import MurckoScaffold
 from rdkit.Chem import MACCSkeys
-import os, itertools
+import os
+import itertools
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-def readPDB(file):
+def readPDB(file, check_file=True):
     with open(file, "r") as pdb:
-        mol = Chem.MolFromPDBBlock(pdb.read())
+        mol = Chem.MolFromPDBBlock(pdb.read(), sanitize=check_file)
         return mol
 
 
-def molsToDict(mol_list):
-    new_mols = [readPDB(i) for i in mol_list]
-    mol_dict = {mol_list[i]: new_mols[i] for i in range(len(mol_list))}
-    return mol_dict
+def molsToDict(mol_list, semisanitize=False):
+    if semisanitize:
+        new_mols = [readPDB(i, check_file=True) for i in mol_list]
+        new_mols = [m.UpdatePropertyCache(strict=False) for m in new_mols]
+        for m in new_mols:
+            m = Chem.SanitizeMol(
+                m, Chem.SanitizeFlags.SANITIZE_KEKULIZE, catchErrors=True
+            )
+    else:
+        new_mols = [readPDB(i) for i in mol_list]
+
+    none_mols = {
+        mol_list[i]: new_mols[i] for i in range(len(mol_list)) if new_mols[i] is None
+    }
+    mol_dict = {
+        mol_list[i]: new_mols[i]
+        for i in range(len(mol_list))
+        if new_mols[i] is not None
+    }
+    return mol_dict, none_mols
 
 
 def morganFPDict(mol_dict):
@@ -48,7 +65,8 @@ def murckoScaffoldFPDict(mol_dict):
 
 
 def maccsKeysFPDict(mol_dict):
-    fp_dict = {key: MACCSkeys.GenMACCSKeys(value) for key, value in mol_dict.items()}
+    fp_dict = {key: MACCSkeys.GenMACCSKeys(
+        value) for key, value in mol_dict.items()}
 
     return fp_dict
 

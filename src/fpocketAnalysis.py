@@ -4,8 +4,7 @@ import re
 import pandas as pd
 import subprocess
 import streamlit as st
-from pandas_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+from st_aggrid import AgGrid
 import shutil
 
 
@@ -22,25 +21,22 @@ def orderFpocketRes(path):
 
 
 def fpocketRun(pdb_file, alpha_min, alpha_max, clus_dist, clus_algo):
-    subprocess.call(
-        [
-            "fpocket",
-            "-f",
-            str(pdb_file),
-            "-m",
-            str(alpha_min),
-            "-M",
-            str(alpha_max),
-            "-D",
-            str(clus_dist),
-            "-C",
-            str(clus_algo),
-        ]
-    )
+    subprocess.call([
+        "fpocket",
+        "-f",
+        str(pdb_file),
+        "-m",
+        str(alpha_min),
+        "-M",
+        str(alpha_max),
+        "-D",
+        str(clus_dist),
+        "-C",
+        str(clus_algo),
+    ])
 
 
 def fpocketAnalysis(path):
-
     for i in os.listdir(path):
         res_parsed = os.path.join(path, "res_parsed/")
         try:
@@ -55,7 +51,7 @@ def fpocketAnalysis(path):
             for pocket in glob.glob(pockets + "*.pdb"):
                 pocketData = []
                 pocketData.append(proteinName)
-                pocketName = pocket[len(pockets) : -8]
+                pocketName = pocket[len(pockets): -8]
                 pocketData.append(pocketName)
                 with open(pocket, "r") as file:
                     pocketResidues = []
@@ -100,13 +96,3 @@ def fpocketAnalysis(path):
                 data=proteinPockets,
             )
             df.to_csv(res_parsed + proteinName + ".csv")
-
-
-def fpocketDisplayResults(csv):
-    df = pd.read_csv(csv, sep=",")
-    st.dataframe(df.drop(["Unnamed: 0", "ProteinName"], axis=1))
-    pr = df.drop(
-        ["Unnamed: 0", "ProteinName", "PocketResidues", "PocketName"],
-        axis=1,
-    ).profile_report()
-    st_profile_report(pr)
