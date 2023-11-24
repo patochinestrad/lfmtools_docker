@@ -53,10 +53,10 @@ def ligandToPDBQT(indir_name, outdir_name):
     for i in [
         os.path.join(indir_name, i) for i in os.listdir(indir_name) if i.endswith("pdb")
     ]:
+        print(i)
         subprocess.call([
             "python",
             "src/prepare_ligand4.py",
-            "-v",
             "-l",
             i,
             "-o",
@@ -78,14 +78,13 @@ def receptorToPDBQT(indir_name, outdir_name):
     ]:
         subprocess.call([
             "python",
-            "src/prepare_receptor4.py",
-            "-v",
+            "src/prepare_receptor",
             "-r",
             i,
-            "-o",
-            i[:-4] + ".pdbqt",
             "-A",
             "bonds_hydrogens",
+            "-o",
+            i[:-4] + ".pdbqt",
         ])
     for i in [
         os.path.join(indir_name, i)

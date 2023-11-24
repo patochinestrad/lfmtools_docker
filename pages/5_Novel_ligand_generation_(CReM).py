@@ -12,8 +12,7 @@ st.subheader(
     "Input one ligand in pdb format to generate novel ligands using [CReM Database SA2](http://www.qsar4u.com/pages/crem.php) "
 )
 
-file = st.file_uploader("Upload PDB file", type="pdb",
-                        accept_multiple_files=False)
+file = st.file_uploader("Upload PDB file", type="pdb", accept_multiple_files=False)
 
 
 if file:
@@ -58,7 +57,6 @@ if file:
 
                 autodockFuncs.compoundListToPDB(mols_to_make, outpath)
 
-                autodockFuncs.ligandToPDBQT(outpath, pdbqt_output)
                 st.success("Done!")
 
             with io.BytesIO() as buffer:

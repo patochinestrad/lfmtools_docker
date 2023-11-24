@@ -1,5 +1,8 @@
 import urllib
+import subprocess
 import streamlit as st
+import st_speckmol
+import openbabel
 import pandas as pd
 from prody import parsePDB, writePDB, pathPDBFolder
 from tempfile import TemporaryDirectory
@@ -15,7 +18,7 @@ def getEntryTXT(upid):
     except urllib.error.HTTPError as e:
         st.warning(
             f"""There was an error while trying to get your UniProt ID:
-             *{e}*. 
+             *{e}*.
             Maybe it is wrong?"""
         )
         return e
@@ -74,13 +77,13 @@ def displayPDB(pdbname, assembly_number):
                                         <head>
                                             <meta charset="utf-8" />
                                             <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=10.0">
-                                            
-                                            
-                                            
+
+
+
                                             <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
-                                            
+
                                             <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-lite.js" charset="utf-8"></script>
-                                            
+
                                             <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js" charset="utf-8"></script>
 
                                             <link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-3.1.0.css">
@@ -96,17 +99,26 @@ def displayPDB(pdbname, assembly_number):
                                         </head>
                                         <body>
 
-                                        
-                                            
-                                    
-                                            
+
+
+
+
                                             <div id="myViewer">
                                                 <pdbe-molstar id="pdbeMolstarComponent" molecule-id="{pdbname.lower()}" hide-controls="false" assembly-id="{assembly_number}"></pdbe-molstar>
                                             </div>
-                                            
+
                                         </body>
                                     </html>
                                     """,
         width=900,
         height=1200,
     )
+
+
+def speckmolView(filename):
+    subprocess.run(
+        ["obabel", "-ipdbqt", filename.getvalue(), "-oxyz", "-Oreceptor.xyz"]
+    )
+    with open("receptor.xyz") as f:
+        structure = f.read()
+    speckmol = st_speckmol.view(structure)
