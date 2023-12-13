@@ -6,7 +6,7 @@ WORKDIR /app
 
 # ES IMPORTANTE PONER BIEN LA UBICACIONES DE LA DATABASE!!!
 
-COPY src/database/crem_db_sa2.db /app
+COPY crem_db_sa2.db /app
 
 COPY entrypoint.sh /app
 
@@ -39,6 +39,8 @@ RUN conda install -c conda-forge fpocket
 RUN conda install -c conda-forge rdkit
 
 RUN pip install seaborn nglview prody streamlit crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
+
+RUN conda env update --name lfmtools-docker --file environment.yml --prune
 
 EXPOSE 8501
 

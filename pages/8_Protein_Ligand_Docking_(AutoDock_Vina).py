@@ -2,7 +2,7 @@ import streamlit as st
 from src import autodockFuncs, helper_funcs
 from src import uniprotFuncs
 
-st.title("Ligand PDB to PDBQT conversion")
+st.title("Protein Ligand Docking (AutoDock Vina)")
 
 st.subheader(
     "Input one receptor file in PDBQT format and one or more ligands in PDBQT format to perform the docking"
