@@ -40,7 +40,7 @@ RUN conda install -c conda-forge rdkit
 
 RUN pip install seaborn nglview prody streamlit crem git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3 st_speckmol ipython_genutils
 
-EXPOSE 8080 8081
+EXPOSE 8081
 
 RUN ["chmod", "+x", "entrypoint.sh"]
 

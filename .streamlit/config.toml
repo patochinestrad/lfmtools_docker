@@ -3,7 +3,6 @@ base = "dark"
 
 [server]
 port = 8081
-baseUrlPath = "lfmtools"
 
 [browser]
 serverAddress = "0.0.0.0"
