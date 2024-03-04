@@ -6,3 +6,7 @@ Para generar la imagen desde el Dockerfile hay que descargar el Dockerfile, el e
 
 ### TODO:
  - Hay que agregar la pagina y funciones para interacciones con plip y fingerprint interactions
+
+Para correr:
+
+sudo docker run -p 8081:8081 lfmtools
