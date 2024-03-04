@@ -165,6 +165,7 @@ dependencies:
   - zlib-ng=2.0.6=h166bdaf_0
   - zstd=1.5.2=hfc55251_7
   - pip:
+      - openbabel==3.1.1
       - altair==5.1.2
       - anyio==4.1.0
       - argon2-cffi==23.1.0
