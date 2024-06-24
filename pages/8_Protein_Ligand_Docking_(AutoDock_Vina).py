@@ -1,4 +1,5 @@
 import streamlit as st
+import st_speckmol
 from src import autodockFuncs, helper_funcs
 from src import uniprotFuncs
 
@@ -14,5 +15,15 @@ ligands = st.file_uploader(
 )
 
 if receptor and ligands:
-    if st.checkbox("Display receptor"):
-        uniprotFuncs.speckmolView(receptor)
+    uniprotFuncs.speckmolView(receptor)
+    """
+    Hacer una caja con el centro y los lados del grid
+    """
+    center = st.number_input
+    st_speckmol(
+        """C        0.000000        0.000000        0.000000
+H        0.000000        0.000000        1.089000
+H        1.026719        0.000000       -0.363000
+H       -0.513360       -0.889165       -0.363000
+H       -0.513360        0.889165       -0.363000"""
+    )
